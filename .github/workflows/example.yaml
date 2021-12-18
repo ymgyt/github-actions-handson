@@ -1,0 +1,10 @@
+name: paths-ignore-example
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+jobs:
+  hello:
+    runs-on: ubuntu-20.04
+    steps:
+      -run: date

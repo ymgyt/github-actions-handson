@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: davidB/rust-cargo-make@v1
       - name: Run hello
-        run: cargo make hello
+        run: cargo make my_task

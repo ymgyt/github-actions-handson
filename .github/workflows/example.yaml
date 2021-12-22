@@ -7,6 +7,7 @@ jobs:
   hello:
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v2
       - uses: davidB/rust-cargo-make@v1
       - name: Run hello
         run: cargo make my_task

@@ -7,13 +7,6 @@ jobs:
   hello:
     runs-on: ubuntu-20.04
     steps:
-    - name: Install cargo-make
-      uses: actions-rs/cargo@v1
-      with:
-        command: install
-        args: --debug cargo-make
-    - name: Run hello
-      uses: actions-rs/cargo@v1
-      with:
-        command: make
-        args: hello
+      - uses: davidB/rust-cargo-make@v1
+      - name: Run hello
+        run: cargo make hello

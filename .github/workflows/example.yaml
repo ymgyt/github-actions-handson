@@ -1,8 +1,7 @@
 name: paths-ignore-example
 on:
-  push:
-    paths-ignore:
-      - 'docs/**'
+  workflow_dispatch
+
 jobs:
   hello:
     runs-on: ubuntu-20.04

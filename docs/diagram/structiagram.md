@@ -1,5 +1,6 @@
 # Structiagram
 
+<<<<<<< Updated upstream
 ```mermaid
 %%{init: {
             "er": {
@@ -18,3 +19,7 @@ A {
 }
 A ||--|| B : b
 ```
+||||||| constructed merge base
+
+=======
+>>>>>>> Stashed changes

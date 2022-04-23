@@ -44,6 +44,7 @@ function generate_diagram() {
 function git_push() {
   git config user.email "githubactions@example.com"
   git config user.name "github actions"
+  git status
   git commit -am "doc: update er diagram"
   git push origin master
 }

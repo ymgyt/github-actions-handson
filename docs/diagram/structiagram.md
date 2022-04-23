@@ -1,6 +1,5 @@
 # Structiagram
 
-<<<<<<< Updated upstream
 ```mermaid
 %%{init: {
             "er": {
@@ -10,16 +9,12 @@
             }
         }}%%
 erDiagram
-B {
-    String name
-}
 A {
     String name
     BId b
 }
+B {
+    String name
+}
 A ||--|| B : b
 ```
-||||||| constructed merge base
-
-=======
->>>>>>> Stashed changes

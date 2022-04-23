@@ -6,7 +6,12 @@ jobs:
   hello:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: davidB/rust-cargo-make@v1
-      - name: Run hello
-        run: cargo make my_task
+      - uses: actions/checkout@v3
+      - uses: actions-rs/install@v0.1
+        with:
+          crate: structiagram
+          version: latest
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: scripts/structiagram.sh git-push

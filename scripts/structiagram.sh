@@ -46,7 +46,7 @@ function git_push() {
   git config user.email "githubactions@example.com"
   git config user.name "github actions"
   git status
-  git checkout --branch "${branch}"
+  git checkout -b "${branch}"
   git commit -am "doc: update er diagram"
   git push origin "${branch}"
 

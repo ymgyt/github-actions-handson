@@ -25,6 +25,7 @@ function check_commands() {
   commands=(
     "structiagram"
     "npx"
+    "gh"
   )
 
   for command in "${commands[@]}"

@@ -11,6 +11,8 @@
 erDiagram
 A {
     String name
+    String v1
+    String created_at
     BId b
 }
 B {

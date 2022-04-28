@@ -15,3 +15,5 @@ jobs:
         with:
           node-version: '16'
       - run: scripts/structiagram.sh git-push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

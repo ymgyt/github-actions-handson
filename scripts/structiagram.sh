@@ -42,11 +42,19 @@ function generate_diagram() {
 }
 
 function git_push() {
+  local branch="er-diagram-$(date '+%Y-%m-%d-%H-%M-%S')"
   git config user.email "githubactions@example.com"
   git config user.name "github actions"
   git status
+  git checkout "${branch}"
   git commit -am "doc: update er diagram"
-  git push origin master
+  git push origin "${branch}"
+
+  gh pr create \
+    --base master \
+    --title "Update er diagram" \
+    --body "Created by scheduled workflow" \
+    --reviewer 'ymgyt'
 }
 
 function main() {

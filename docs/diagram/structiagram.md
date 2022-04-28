@@ -9,13 +9,13 @@
             }
         }}%%
 erDiagram
-B {
-    String name
-}
 A {
     String name
     String created_at
     BId b
+}
+B {
+    String name
 }
 A ||--|| B : b
 ```
